@@ -1,5 +1,5 @@
 .Background {
-    background-image: url("./Bg.svg");
+    background-color: #DFECE8;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,4 +7,53 @@
     height: 100vh;
     width: 100vw;
     z-index: -10;
+}
+
+.mt-1 {
+    z-index: -9;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    top: 10vh;
+}
+
+.mt-1 img {
+    width: 70vw;
+    height: 60vh;
+}
+
+
+.mt-2 {
+    z-index: -8;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    width: 50w;
+    top: 10vh;
+}
+
+.mt-2 img {
+    width: 51vw;
+    height: 54vh;
+}
+
+.mt-3 {
+    z-index: -7;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    width: 150vw;
+    top: 10vh;
+}
+
+.mt-3 img {
+    width: 54vw;
+    height: 42vh;
 }

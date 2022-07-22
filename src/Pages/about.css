@@ -1,0 +1,16 @@
+.about {
+    position: relative;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 90vh;
+    z-index: 1;
+}
+.about .about__header {
+    position: relative;
+    display: flex;
+    font-family: 'Parisienne', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+    color: #429C87;
+}
