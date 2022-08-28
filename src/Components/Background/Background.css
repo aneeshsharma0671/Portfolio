@@ -1,3 +1,7 @@
+:root {
+    --cloud-anim-time : 25s;
+    --cloud-height : 10vh;
+}
 .Background {
     background-color: #DFECE8;
     background-position: bottom;
@@ -56,4 +60,38 @@
 .mt-3 img {
     width: 54vw;
     height: 42vh;
+}
+
+.Background .cloud1 {
+    position: absolute;
+    top: 10vh;
+    animation: cloudanimation 45s linear -25s infinite;
+}
+
+.Background .cloud2 {
+    position: absolute;
+    top: 25vh;
+    animation: cloudanimation 50s linear -10s infinite;
+}
+
+.Background .cloud3 {
+    position: absolute;
+    top: 40vh;
+    animation: cloudanimation 65s linear -2s infinite;
+}
+
+.Background .cloud4 {
+    position: absolute;
+    top: 50vh;
+    animation: cloudanimation 40s linear -15s infinite;
+}
+
+
+@keyframes cloudanimation {
+    0% {
+        transform: translateX(-10vw);
+    }
+    100% {
+        transform: translateX(110vw);
+    }
 }
