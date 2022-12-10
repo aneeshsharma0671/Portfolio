@@ -1,4 +1,4 @@
-import { FaBars } from 'react-icons/fa';
+import { FaBars,FaCross } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -9,11 +9,40 @@ height: 10vh;
 margin-left : 10vw;
 margin-right : 10vw;
 display: flex;
+align-items: center;
 justify-content: space-between;
 z-index: 12;
 `;
 
-export const NavLink = styled(Link)`
+export const Sidebar = styled.div`
+position : absolute;
+background-color: #DFECE8;
+height: 100vh;
+width: 100vw;
+opacity: ${props => props.display === true ? 1 : 0};
+overflow : hidden;
+transition: 0.5s;
+display: flex;
+z-index: 12;
+`;
+
+export const NavList = styled.ul`
+display: flex-row;
+height: 100%;
+width: 100%;
+overflow-y: scroll;
+list-style: none;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 10vw;
+padding: 0;
+padding-inline-start: 0;
+font-family: 'Pacifico', cursive;
+`;
+
+
+export const NavLink = styled(Link)`       
 color: #429C87;
 display: flex;
 align-items: center;
@@ -31,17 +60,15 @@ font-size: 1.5rem;
 }
 `;
 
-export const Bars = styled(FaBars)`
+export const IconContainer = styled.div`
 display: none;
-color: #808080;
+color: darkcyan;
 @media screen and (max-width: 768px) {
-	display: block;
-	position: absolute;
+	display: flex;
 	top: 0;
 	right: 0;
-	transform: translate(-100%, 75%);
-	font-size: 1.8rem;
-	cursor: pointer;
+	font-size: 2.2rem;
+	cursor: pointer;s
 }
 `;
 
