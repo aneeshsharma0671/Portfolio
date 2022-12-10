@@ -22,7 +22,7 @@ width: 100vw;
 opacity: ${props => props.display === true ? 1 : 0};
 overflow : hidden;
 transition: 0.5s;
-display: flex;
+display: ${props => props.display === true ? 'flex' : 'none'};
 z-index: 12;
 `;
 
@@ -68,6 +68,8 @@ export const SidebarLink = styled(Link)`
 		text-decoration: none;
 	}
 }`;
+
+
 
 export const IconContainer = styled.div`
 display: none;
