@@ -7,12 +7,12 @@ NavMenu,
 Sidebar,
 IconContainer,
 SidebarLink,
-ImageLink
 } from './NavbarElements';
 import Logo from './LogoA.svg';
 import './navbar.css';
 import { FaBars} from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const[navbaropen,setNavbarOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
 return (
 	<>
 	<Nav>
-        <ImageLink to="/" onClick={()=>setNavbarOpen(false)} activeStyle><img src={Logo} alt="Aneesh"/></ImageLink>
+        <Link to="/" onClick={()=>setNavbarOpen(false)} activeStyle><img src={Logo} alt="Aneesh"/></Link>
         <IconContainer onClick={handleToggle} >{navbaropen?<ImCross/>:<FaBars/>}</IconContainer>
 		<NavMenu>
             <NavLink to='/projects' activeStyle>
