@@ -14,11 +14,11 @@ function App() {
         <BackGround />
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path='/portfolio' element={<Home />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route exact path='/portfolio/' element={<Home />} />
+          <Route path='/portfolio/' element={<Home />} />
+          <Route path='/portfolio/projects' element={<Projects />} />
+          <Route path='/portfolio/about' element={<About />} />
+          <Route path='/portfolio/contact' element={<Contact />} />
         </Routes>
       </Router>
     </div>

@@ -18,25 +18,25 @@ const Navbar = () => {
 return (
 	<>
 	<Nav>
-        <a href="/" onClick={()=>setNavbarOpen(false)}><img src={Logo} alt="Aneesh"/></a>
+        <a href="/portfolio/" onClick={()=>setNavbarOpen(false)}><img src={Logo} alt="Aneesh"/></a>
         <IconContainer onClick={handleToggle} >{navbaropen?<ImCross/>:<FaBars/>}</IconContainer>
 		<NavMenu>
-            <NavLink to='/projects' activeStyle>
+            <NavLink to='/portfolio/projects' activeStyle>
                 Projects
             </NavLink>
-            <NavLink to='/about' activeStyle>
+            <NavLink to='/portfolio/about' activeStyle>
                 About
             </NavLink>
-            <NavLink to='/contact' activeStyle>
+            <NavLink to='/portfolio/contact' activeStyle>
                 Contact
             </NavLink>
 		</NavMenu>
 	</Nav>
     <Sidebar display={navbaropen}>
         <NavList>
-            <li><a href='/projects' onClick={handleToggle}>Projects</a></li>
-            <li><a href='/about' onClick={handleToggle}>About</a></li>
-            <li><a href='/contact' onClick={handleToggle}>Contact</a></li>
+            <li><a href='/portfolio/projects' onClick={handleToggle}>Projects</a></li>
+            <li><a href='/portfolio/about' onClick={handleToggle}>About</a></li>
+            <li><a href='/portfolio/contact' onClick={handleToggle}>Contact</a></li>
         </NavList>
     </Sidebar>
 	</>
