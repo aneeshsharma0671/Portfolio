@@ -6,6 +6,7 @@ NavList,
 NavMenu,
 Sidebar,
 IconContainer,
+SidebarLink
 } from './NavbarElements';
 import Logo from './LogoA.svg';
 import './navbar.css';
@@ -18,7 +19,7 @@ const Navbar = () => {
 return (
 	<>
 	<Nav>
-        <a href="/" onClick={()=>setNavbarOpen(false)}><img src={Logo} alt="Aneesh"/></a>
+        <a href="/portfolio/" onClick={()=>setNavbarOpen(false)}><img src={Logo} alt="Aneesh"/></a>
         <IconContainer onClick={handleToggle} >{navbaropen?<ImCross/>:<FaBars/>}</IconContainer>
 		<NavMenu>
             <NavLink to='/projects' activeStyle>
@@ -34,9 +35,9 @@ return (
 	</Nav>
     <Sidebar display={navbaropen}>
         <NavList>
-            <li><a href='/projects' onClick={handleToggle}>Projects</a></li>
-            <li><a href='/about' onClick={handleToggle}>About</a></li>
-            <li><a href='/contact' onClick={handleToggle}>Contact</a></li>
+            <li><SidebarLink to='/projects' onClick={handleToggle} activeStyle>Projects</SidebarLink></li>
+            <li><SidebarLink to='/about' onClick={handleToggle} activeStyle>About</SidebarLink></li>
+            <li><SidebarLink to='/contact' onClick={handleToggle} activeStyle>Contact</SidebarLink></li>
         </NavList>
     </Sidebar>
 	</>

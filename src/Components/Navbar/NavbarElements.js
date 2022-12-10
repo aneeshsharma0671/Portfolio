@@ -59,6 +59,15 @@ font-size: 1.5rem;
 	color: #0C221D;
 }
 `;
+export const SidebarLink = styled(Link)`
+	color: darkcyan;
+	&:hover {
+		text-decoration: none;
+	}
+	&: visited {
+		text-decoration: none;
+	}
+}`;
 
 export const IconContainer = styled.div`
 display: none;
