@@ -69,6 +69,9 @@ export const SidebarLink = styled(Link)`
 	}
 }`;
 
+export const ImageLink = styled(Link)`
+}`;
+
 export const IconContainer = styled.div`
 display: none;
 color: darkcyan;
